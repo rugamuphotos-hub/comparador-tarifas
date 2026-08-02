@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Comparador Tarifas</string>
+    <string name="accessibility_service_description">Lee los precios mostrados en pantalla de Uber, Bolt y Cabify para compararlos. No envía datos a ningún servidor.</string>
+</resources>
