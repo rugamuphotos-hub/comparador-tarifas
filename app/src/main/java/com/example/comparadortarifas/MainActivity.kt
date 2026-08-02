@@ -25,7 +25,26 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS))
         }
 
+        findViewById<Button>(R.id.openUberBtn).setOnClickListener {
+            openApp("com.ubercab", "Uber")
+        }
+        findViewById<Button>(R.id.openBoltBtn).setOnClickListener {
+            openApp("ee.mtakso.client", "Bolt")
+        }
+        findViewById<Button>(R.id.openCabifyBtn).setOnClickListener {
+            openApp("com.cabify.rider", "Cabify")
+        }
+
         startPolling()
+    }
+
+    private fun openApp(packageName: String, label: String) {
+        val launchIntent = packageManager.getLaunchIntentForPackage(packageName)
+        if (launchIntent != null) {
+            startActivity(launchIntent)
+        } else {
+            resultView.text = "$label no está instalada en este móvil."
+        }
     }
 
     private fun startPolling() {
