@@ -27,6 +27,27 @@
         android:text="Activar servicio de accesibilidad"
         android:layout_marginBottom="24dp" />
 
+    <Button
+        android:id="@+id/openUberBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Uber"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/openBoltBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Bolt"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/openCabifyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Cabify"
+        android:layout_marginBottom="24dp" />
+
     <TextView
         android:id="@+id/resultView"
         android:layout_width="match_parent"
